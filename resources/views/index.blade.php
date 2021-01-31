@@ -14,9 +14,7 @@
 					class="form-control <x-origin name='form-a'>@error('email') is-invalid @enderror</x-origin>"
 					value="<x-origin name='form-a'>{{ old('email') }}</x-origin>" />
 				<x-origin name='form-a'>
-					@error('email')
-					<x-feedback :message="$message" />
-					@enderror
+					<x-feedback name="email" />
 				</x-origin>
 			</div>
 			<button type="submit" class="btn btn-primary">Submit</button>
@@ -36,9 +34,7 @@
 					class="form-control <x-origin name='form-b'>@error('email') is-invalid @enderror</x-origin>"
 					value="<x-origin name='form-b'>{{ old('email') }}</x-origin>" />
 				<x-origin name='form-b'>
-					@error('email')
-					<x-feedback :message="$message" />
-					@enderror
+					<x-feedback name="email" />
 				</x-origin>
 			</div>
 			<button type="submit" class="btn btn-primary">Submit</button>

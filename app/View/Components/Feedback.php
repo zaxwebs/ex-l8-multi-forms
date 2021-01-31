@@ -7,15 +7,15 @@ use Illuminate\View\Component;
 class Feedback extends Component
 {
     public $type;
-    public $message;
+    public $name;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($message, $type = 'invalid')
+    public function __construct($name, $type = 'invalid')
     {
-        $this->message = $message;
+        $this->name = $name;
         $this->type = $type;
     }
 
